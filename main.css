@@ -1,0 +1,15 @@
+body,html{
+    height: 100%;
+}
+.container{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.top_line{
+    height: 40px;
+    background: #282828;
+}
+.top_line .right_col{
+    height: 100%;
+}
