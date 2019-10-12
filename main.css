@@ -1,6 +1,5 @@
 body,html{
     height: 100%;
-    margin: 0;
 }
 .container{
     width: 1200px;
@@ -11,14 +10,6 @@ body,html{
     height: 40px;
     background: #282828;
 }
-.top_line-container{
-	display: flex;
-	justify-content: space-between;
-}
 .top_line .right_col{
     height: 100%;
-}
-.top_line span,
-.top_line i{
-	color: #fff;
 }
