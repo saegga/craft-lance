@@ -185,7 +185,7 @@ p{
     height: 260px;
     background: #fff;
     margin: 0 auto;
-    box-shadow: 0px 0px-4px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 4px -2px rgba(0,0,0,0.75);
 }
 .process_block a{
     position: absolute;
@@ -287,6 +287,7 @@ p{
 
 .block_affordable{
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 .check_edition{
     width: 280px;
@@ -471,4 +472,135 @@ p{
 .purchase.standart{
     background: #5db442;
     color: #fff;
+}
+.block_comprehensive{
+    background: #ececec;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cards-item{
+    margin: 0 15px;
+    width: 270px;
+    margin-bottom: 30px;
+
+    background: #fff;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    box-shadow: 0px 0px 4px -2px rgba(0,0,0,0.75);
+}
+.cards-item i{
+	display: block;
+	background-image: url('img/cards-item.png');
+	margin: 0 auto;
+	position: relative;
+}
+.cards-item i:after{
+	content: '';
+	position: absolute;
+	width: 70px;
+	height: 2px;
+	background: #ececec;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.cards-item-community{
+	width: 56px; 
+	height: 53px;
+	background-position: -292px -10px;
+}
+.cards-item-zhuk{
+	width: 54px;
+	height: 54px;
+	background-position: -144px -10px;
+}
+.cards-item-settings{
+	width: 65px;
+	height: 59px;
+	background-position: -1096px -10px;
+}
+.cards-item-arrows{
+	width: 60px;
+	height: 52px;
+	background-position: -444px -10px;
+}
+.cards-item-cup{
+	width: 63px;
+	height: 48px;
+	background-position: -764px -10px;
+}
+.cards-item-list{
+	width: 47px;
+	height: 61px;
+	background-position: -10px -10px;
+}
+.cards-item-avia{
+	width: 60px;
+	height: 61px;
+	background-position: -604px -10px;
+}
+.cards-item-folder{
+	width: 63px;
+	height: 48px;
+	background-position: -930px -10px;
+}
+
+.cards-item:hover
+{
+	background: #5db442;
+}
+.cards-item:hover i:after
+{
+	background: #fff;
+}
+.cards-item:hover > .card-title,
+.cards-item:hover > .card-text
+{
+	color: #fff;
+}
+.cards-item:hover .cards-item-community{
+    background-position: -368px -10px;
+}
+.cards-item:hover .cards-item-zhuk{
+	background-position: -218px -10px;
+}
+.cards-item:hover .cards-item-settings{
+	background-position: -1181px -10px;
+}
+.cards-item:hover .cards-item-arrows{
+	background-position: -524px -10px;
+}
+.cards-item:hover .cards-item-cup{
+	background-position: -847px -10px;
+}
+.cards-item:hover .cards-item-list{
+	background-position: -77px -10px;
+}
+.cards-item:hover .cards-item-avia{
+	background-position: -684px -10px;
+}
+.cards-item:hover .cards-item-folder{
+	background-position: -1013px -10px;
+}
+.card-title{
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #333;
+	font-size: 16px;
+	text-align: center;
+	padding-top: 40px;
+}
+.card-text{
+	color: #777;
+	font-size: 12px;
+	text-align: center;
+	font-weight: 300;
+	line-height: 2;
+	padding: 0 7px;
+	padding-top: 35px;
 }
