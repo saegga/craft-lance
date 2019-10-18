@@ -303,6 +303,7 @@ p{
 }
 .check_edition > div p{
     color: #333;
+    font-weight: 500;
 }
 .check_edition > div.active{
     background: #5db442;
@@ -351,13 +352,30 @@ p{
     width: 270px;
     margin-left: 45px;
     border: 1px solid #ececec;
+    padding-bottom: 35px;
 }
 .prices-item:first-child{
     margin-left: 0;
 }
 .price_top-section{
-    height: 110px;
-    border-bottom: 1px solid #ececec;
+    position: relative;
+}
+.prices-standart .price_top-section:before{
+    content: '';
+    width: 70px;
+    height: 2px;
+    background: #5db442;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.price_top-section:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #ececec;
+    bottom: 45px;
 }
 .price-title{
     font-weight: 600;
@@ -365,4 +383,92 @@ p{
     text-transform: uppercase;
     text-align: center;
     padding: 25px 0;
+}
+.price-value{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border: 1px solid #5db442; 
+    border-radius: 50%;
+    margin: 0 auto;
+    background: #fff;
+    z-index: 50;
+}
+.price-value:before{
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 90px;
+    border: 3px solid #ececec;
+    border-radius: 50%;
+    left: -4px;
+    top: -4px;
+}
+
+.price-value .cost{
+    font-weight: 600;
+    color: #333;
+    font-size: 23px;
+    text-align: center;
+    padding-top: 25px;
+    line-height: normal;
+}
+.price-value .time{
+    text-align: center;
+    font-size: 10px;
+    font-weight: 300;
+    font-style: italic;
+    color: #777777;
+    line-height: 1;
+}
+.price_list{
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+.price_list p{
+    color: #777;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.price_list p:last-child{
+    padding-bottom: 0;
+}
+.price_list p.yes:before{
+    display: inline-block;
+    content: '';
+    width: 9px;
+    height: 9px;
+    background: url('img/yes.png');
+    margin-right: 10px;
+}
+.price_list p.no:before{
+    display: inline-block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: url('img/no.png');
+    margin-right: 10px; 
+}
+.purchase{
+    display: block;
+    text-align: center;
+    padding: 0 35px;
+    border: 1px solid #ececec;
+    border-radius: 20px;
+    width: 120px;
+    height: 34px;
+    line-height: 34px; 
+    margin: 0 auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 10px;
+    font-weight: 500;
+}
+.purchase:hover,
+.purchase.standart{
+    background: #5db442;
+    color: #fff;
 }
