@@ -787,3 +787,155 @@ footer{
 		width: 40px;
 	}
 }
+@media(min-width: 576px) and (max-width: 767px){
+	.container{
+		max-width: 575px;
+	}
+	.main_pict{
+		max-width: 100%;
+	}
+
+	.mid_line-menu ul{
+		font-size: 13px;
+	}
+	.mid_line-menu ul li{
+		margin-left: 25px;
+	}
+	.mid_line-menu ul li.sign_in a{
+		padding: 0 20px;
+	}
+	.top_banner{
+		padding-top: 30px;
+		height: 650px;
+	}
+	.top_banner-subtitle{
+		font-size: 14px;
+		padding: 10px 20px 20px 20px;
+	}
+	h1{
+		font-size: 38px;
+	}
+	.logo img{
+		width: 100%;
+	}
+	.title_block{
+		font-size: 38px;
+		padding-bottom: 20px;
+	}
+	.get_email{
+		padding-top: 40px;
+	}
+	.block_community,
+	.block_affordable,
+	.block_comprehensive{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.process_block{
+		width: 550px;
+	}
+	.prices{
+		margin: 0 15px;
+	}
+	.prices-item{
+		margin-left: 15px;
+	}
+	.cards-item{
+		flex: 0 1 50%;
+		margin: 0;
+	}
+}
+@media(max-width: 575px){
+	.container{
+		width: 100%;
+	}
+	.main_pict{
+		width: 100%;
+	}
+	.process_block{
+		width: 90%;
+	}
+	.block_community,
+	.block_affordable,
+	.block_comprehensive{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	h1{
+		font-size: 38px;
+	}
+	.logo img{
+		width: 100%;
+	}
+	.title_block{
+		font-size: 28px;
+		padding-bottom: 20px;
+	}
+	.top_banner{
+		padding-top: 30px;
+		height: 650px;
+	}
+	.top_banner-subtitle{
+		font-size: 14px;
+		padding: 10px 20px 20px 20px;
+	}
+	.prices{
+		margin: 0 15px;
+	}
+	.prices-item{
+		margin-left: 15px;
+	}
+	.cards-item{
+		flex: 0 1 100%;
+		margin-bottom: 20px;
+	}
+	.cards-item:last-child{
+		margin-bottom: 0;
+	}
+}
+
+@media(max-width: 475px){
+    .get_email .btn-container input[type="text"]{
+        width: 200px;
+    }
+    .get_email .btn-container input[type="submit"]{
+        width: 80px;
+    }
+    .process_block a{
+        left: 15%;
+    }
+    .prices{
+        flex-flow: wrap;
+    }
+    .prices-item{
+        width: 100%;
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+    .prices-item:last-child{
+        margin-bottom: 0;
+    }
+    .top_footer{
+        padding: 35px 0;
+    }
+    .top_footer-container{
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
+    .top_footer-newsletter{
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .top_footer-column{
+        margin-left: 0; 
+        flex: unset;
+    }
+    .column-descr,
+    .top_footer-column ul{
+        padding-top: 10px;
+    }
+    .newsletter-email{
+        margin-top: 5px;
+    }
+}
