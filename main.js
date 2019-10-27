@@ -6,8 +6,9 @@ $(document).ready(function(){
 		closeMenu();
 	});
 
-	$(window).scroll(function(){
-		if($(this).scrollTop() >= headerOffset){
+	$(window).on('scroll resize', function(){
+		headerOffset = headerOffset > 0 ? headerOffset : $('.mid_line').offset().top;
+		if($(this).scrollTop() > headerOffset){
 			if(!$('.mid_line').hasClass("fixed")){
 				$('.mid_line').addClass("fixed");
 			}
