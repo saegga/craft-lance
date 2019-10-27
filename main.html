@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Craft Lance</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
     <link rel="stylesheet" href="main.css">
+    
     <script src="https://use.fontawesome.com/1bb7dee42f.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"></script>
-       <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"> </script>
-      <script src="main.js"></script>
+    <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"> </script>
+    <script src="main.js"></script>
 </head>
 <body>
 <header>
@@ -59,10 +61,14 @@
 					<li class="sign_in"><a href="">Sign in</a></li>
 				</ul>
 				<div class="mob-contacts">
-					<i class="icon"></i>
-					<a href="tel:80000000">+44 99151012545</a>
-					<i class="icon"></i>
-					<a href="mailto:contact@bluelance.com">contact@bluelance.com</a>
+					<div class="mob-telephone">
+					    <!-- <i class="icon"></i> -->
+					    <a href="tel:80000000">+44 99151012545</a>
+					</div>
+					<div class="mob-email">
+					    <!-- <i class="icon"></i> -->
+					    <a href="mailto:contact@bluelance.com">contact@bluelance.com</a>
+					</div>
 				</div>
 				<div class="mob-social">
 					<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -84,8 +90,8 @@
 
 		<form action="" class="get_email">
 			<div class="btn-container">
-				<input type="text" placeholder="Enter your email address">
-				<input type="submit" value="Use it free">
+				<input type="text" placeholder="Enter your email address" data-role="none">
+				<input type="submit" value="Use it free" data-role="none">
 			</div>
 			<p>By clicking Use it free, you agree to the  BlueLance Terms of Service.</p>
 		</form>
@@ -243,8 +249,8 @@
 				<p class="column-descr">Insights await in your company's data. Bring them into focus<br> with BlueLance.</p>
 				<form action="">
 					<div class="newsletter-email">
-						<input type="text" placeholder="enter your email">
-						<input type="submit" value="">
+						<input type="text" placeholder="enter your email" data-role="none">
+						<input type="submit" value="" data-role="none">
 					</div>
 				</form>
 			</div>

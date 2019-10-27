@@ -13,7 +13,7 @@ $(document).ready(function(){
 			}
 		}else{
 				$('.mid_line').removeClass("fixed");
-			}
+		}
 	});
 
 	$('.mob-menu i').on('click', function(){

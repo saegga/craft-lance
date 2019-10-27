@@ -27,6 +27,7 @@ ul{
     padding: 0 15px;
 }
 .top_line{
+    display: block;
     height: 40px;
     background: #282828;
 }
@@ -164,6 +165,40 @@ ul{
 }
 .mob-sidebar ul li.sign_in > a{
     color: #fff;
+}
+.mob-contacts{
+    padding-top: 15px;
+}
+.mob-contacts a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+.mob-telephone .icon{
+    display: inline-block;
+    background: url('img/tel.png');
+    width: 11px;
+    height: 11px;
+    margin-right: 6px;
+}
+.mob-email .icon{
+    display: inline-block;
+    background: url('img/email.png');
+    width: 14px;
+    height: 11px;
+    margin-right: 6px;
+}
+.mob-social{
+    padding-top: 15px;
+    text-align: center;
+}
+.mob-social a{
+    color: #000;
+    font-size: 24px;
+    padding-right: 15px;
+}
+.mob-social a:last-child{
+    padding-right: 0;
 }
 .mobile_overlay{
     display: none;
